@@ -46,14 +46,14 @@ main {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 #homepage-bg-video {
     width: 105%;
     height: 105%;
     object-fit: cover;
-    filter: blur(1px);
-    transform: scale(1.05);
 }
 
 #homepage-section-css {
@@ -197,13 +197,10 @@ main {
     padding-bottom: 100px;
     margin-bottom: 0;
     z-index: 1;
-
     background-image:
-        radial-gradient(1200px 700px at 50% 10%, rgba(255,255,255,.75), rgba(255,255,255,0) 60%),
-        radial-gradient(1400px 900px at 50% 55%, rgba(0,0,0,.08), rgba(0,0,0,0) 60%),
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.4)),
         url("files/nextsc-bg.jpg");
-
-    background-size: cover, cover, cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -359,10 +356,15 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
-    transform: scale(1.05);
     animation: sec3Fade 18s infinite;
-    will-change: opacity, transform;
-    filter: brightness(1.15) contrast(1.05) saturate(1.05);
+}
+
+@keyframes sec3Fade {
+    0%   { opacity: 0; }
+    8%   { opacity: 1; }
+    33%  { opacity: 1; }
+    41%  { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 .sec3-slide-1 { background-image: url("files/sample-one.png"); }
