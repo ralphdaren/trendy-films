@@ -1,0 +1,101 @@
+/* ============================================
+   base.css — Design tokens, resets, utilities
+   ============================================ */
+
+/* ─── Custom Fonts ─────────────────────────── */
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('assets/BrittanySignatureRegular.woff2') format('woff2'),
+         url('assets/BrittanySignatureRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'APOLLO';
+    src: url('assets/APOLLO-Regular.woff2') format('woff2'),
+         url('assets/APOLLO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ─── Design Tokens ─────────────────────────── */
+:root {
+    /* Colors */
+    --color-dark-brown:   #311e0f;
+    --color-mid-brown:    #39352c;
+    --color-light-brown:  #6B5335;
+    --color-accent-brown: #957252;
+    --color-accent-gold:  #ad8864;
+    --color-olive:        #525032;
+    --color-olive-light:  #838562;
+    --color-teal:         #86b4b1;
+    --color-cream:        #efedea;
+    --color-warm-white:   #f9f7f4;
+    --color-peach:        #f4e4c9;
+    --color-white:        #ffffff;
+    --color-error:        red;
+    --color-divider:      #cfcdcd;
+
+    /* Typography */
+    --font-display:    'APOLLO', serif;
+    --font-script:     'Brittany Signature', cursive;
+    --font-body:       'Montserrat', sans-serif;
+
+    /* Spacing */
+    --nav-height: 72px; /* approx height of sticky nav */
+
+    /* Transitions */
+    --transition-fast:   0.25s ease;
+    --transition-mid:    0.3s ease;
+    --transition-slow:   0.6s ease;
+
+    /* Reveal animation */
+    --reveal-opacity-duration:  2.5s;
+    --reveal-transform-timing:  3.2s cubic-bezier(.16,1,.3,1);
+}
+
+/* ─── Reset ─────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
+}
+
+/* ─── Scroll-reveal utility ─────────────────── */
+.reveal-up {
+    display: block;
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity  var(--reveal-opacity-duration) ease-out,
+        transform var(--reveal-transform-timing);
+}
+
+.reveal-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ─── Scale utility ─────────────────────────── */
+.scale-y {
+    display: inline-block;
+    transform: scaleY(1.2);
+}

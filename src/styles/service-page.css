@@ -1,0 +1,156 @@
+/* ============================================
+   ServicePage.css — Service page-only styles
+   Depends on: base.css, components.css
+   ============================================ */
+
+/* ─── Page shell ────────────────────────────── */
+#servicepage-body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ─── Page heading ──────────────────────────── */
+#servicepage-h1 {
+    font-weight: 500;
+    text-shadow:
+        1px 1px 2px rgba(0,0,0,0.3),
+       -1px -1px 2px rgba(255,255,255,0.7);
+}
+
+/* ─── Service content wrapper ───────────────── */
+#service-main-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#service-content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    width: 100%;
+}
+
+/* Blurred background image behind service content */
+#service-content-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("files/services-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+#service-process-section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#service-process-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#service-button-wrapper {
+    max-width: 900px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* ─── Sample gallery section ────────────────── */
+#service-next-section {
+    position: relative;
+    background-color: var(--color-cream);
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: -30px;
+    z-index: 1;
+    width: 100%;
+}
+
+#service-next-section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#service-next-section-caption {
+    font-family: var(--font-body);
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--color-light-brown);
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+#service-product-images-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-image-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    height: auto;
+    margin: 10px;
+}
+
+.service-product-images {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.service-image-wrapper:hover .service-product-images {
+    transform: scale(1.1);
+}
+
+/* ─── Media queries ─────────────────────────── */
+@media (max-width: 700px) {
+    #service-main-container {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #service-process-section {
+        padding: 20px 10px;
+        font-size: 15px;
+    }
+
+    #service-next-section-caption {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .service-image-wrapper {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+}

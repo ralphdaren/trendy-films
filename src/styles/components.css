@@ -1,0 +1,430 @@
+/* ============================================
+   components.css — Reusable UI components
+   Shared between index.html and ServicePage.html
+   ============================================ */
+
+/* ─── NAV (shared base) ─────────────────────── */
+.site-nav {
+    padding: 2em 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.site-nav.nav-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Dark variant — homepage */
+.site-nav--dark {
+    background-color: var(--color-dark-brown);
+}
+
+/* Light variant — inner pages */
+.site-nav--light {
+    background-color: var(--color-cream);
+    position: static; /* inner page navs aren't sticky */
+}
+
+.site-nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav__list li {
+    margin: 0 5em;
+}
+
+/* ─── NAV LINK (shared base) ────────────────── */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    transition: width var(--transition-mid);
+}
+
+.nav-link:hover::after {
+    width: 110%;
+}
+
+/* Dark nav link (white text) */
+.nav-link--dark {
+    color: var(--color-white);
+    font-weight: 400;
+}
+.nav-link--dark::after {
+    background-color: var(--color-white);
+}
+
+/* Light nav link (brown text + gold underline) */
+.nav-link--light {
+    color: var(--color-mid-brown);
+    font-weight: 700;
+}
+.nav-link--light::after {
+    height: 2px;
+    background-color: var(--color-accent-gold);
+}
+
+/* ─── FOOTER (shared base) ──────────────────── */
+.site-footer {
+    padding: 0 20px 40px 20px;
+    text-align: center;
+}
+
+.site-footer--dark {
+    background-color: var(--color-dark-brown);
+}
+
+.site-footer--light {
+    background-color: var(--color-cream);
+    position: relative;
+}
+
+.site-footer--light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 60px;
+    height: 1px;
+    background-color: var(--color-divider);
+}
+
+.site-footer__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.site-footer__logo {
+    width: 500px;
+    max-width: 100%;
+}
+
+.site-footer__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Footer nav link */
+.footer-link {
+    position: relative;
+    font-family: var(--font-body);
+    font-size: 12px;
+    padding: 4px 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color var(--transition-mid);
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    transition: width var(--transition-mid);
+}
+
+.footer-link:hover::after {
+    width: 110%;
+}
+
+/* Dark footer link (white) */
+.footer-link--dark {
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 13px;
+}
+.footer-link--dark::after {
+    background-color: var(--color-white);
+}
+
+/* Light footer link (brown + gold hover) */
+.footer-link--light {
+    color: var(--color-mid-brown);
+    font-weight: 500;
+}
+.footer-link--light::after {
+    background-color: var(--color-accent-brown);
+}
+.footer-link--light:hover {
+    color: var(--color-accent-brown);
+}
+
+.site-footer__socials {
+    margin: 20px 0;
+}
+
+.site-footer__socials a {
+    margin: 0 10px;
+    transition: color var(--transition-mid);
+    text-decoration: none;
+}
+
+.site-footer__socials--dark a {
+    color: var(--color-white);
+}
+.site-footer__socials--dark a:hover {
+    color: #d1ae8d;
+}
+
+.site-footer__socials--light a {
+    color: var(--color-mid-brown);
+}
+.site-footer__socials--light a:hover {
+    color: var(--color-accent-brown);
+}
+
+.site-footer__contact {
+    font-family: var(--font-body);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.site-footer--dark  .site-footer__contact { color: var(--color-white); }
+.site-footer--light .site-footer__contact { color: var(--color-mid-brown); font-size: 12px; }
+
+/* ─── BUTTON (shared base) ──────────────────── */
+.btn {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    transition: color var(--transition-fast);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: width var(--transition-slow), right var(--transition-slow);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/* Cream button (dark text → olive on hover) */
+.btn--cream {
+    padding: 17px 50px;
+    font-size: 14px;
+    color: var(--color-mid-brown);
+    background-color: #f1efef;
+}
+.btn--cream::before      { background-color: var(--color-olive); }
+.btn--cream:hover        { color: var(--color-cream); }
+
+/* Compact cream (service/form pages) */
+.btn--cream-sm {
+    padding: 17px 30px;
+    font-size: 14px;
+    color: var(--color-mid-brown);
+    background-color: #f1efef;
+}
+.btn--cream-sm::before   { background-color: var(--color-teal); }
+.btn--cream-sm:hover     { color: var(--color-cream); }
+
+/* Form submit */
+.btn--form {
+    padding: 10px 25px;
+    font-size: 12px;
+    color: var(--color-mid-brown);
+    background-color: #f1efef;
+    margin-top: 40px;
+}
+.btn--form::before       { background-color: var(--color-teal); }
+.btn--form:hover::before { left: 0; right: auto; }
+
+/* Cancel button */
+.btn--cancel {
+    padding: 10px 25px;
+    font-size: 12px;
+    color: var(--color-mid-brown);
+    background-color: #f1efef;
+}
+.btn--cancel::before     { background-color: #fb8d8d; }
+
+/* Olive CTA (sec3) */
+.btn--olive {
+    padding: 14px 34px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--color-cream);
+    background-color: var(--color-olive);
+    margin-top: 16px;
+}
+.btn--olive::before  { background-color: var(--color-olive-light); }
+.btn--olive:hover    { color: var(--color-cream); }
+.btn--olive:active   { color: var(--color-mid-brown); }
+
+/* ─── ACCORDION ─────────────────────────────── */
+.accordion-item {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-header {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    padding: 16px;
+    background-color: var(--color-mid-brown);
+    color: var(--color-white);
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background-color var(--transition-mid);
+    position: relative;
+    width: 100%;
+}
+
+.accordion-header:hover {
+    background-color: #2c2922;
+}
+
+.accordion-header::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+}
+
+.accordion-item.open .accordion-header::after {
+    content: "-";
+}
+
+.accordion-item.open .accordion-header {
+    font-weight: 700;
+    background-color: #2e2a22;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    background-color: var(--color-mid-brown);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 800px;
+    opacity: 1;
+    padding: 16px;
+}
+
+/* ─── SHARED MEDIA QUERIES ──────────────────── */
+@media (max-width: 700px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .site-nav__list {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .site-nav__list li {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-footer__top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-footer__logo {
+        width: 80%;
+    }
+
+    .site-footer__nav-list {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .accordion-item {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .accordion-header {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .accordion-content {
+        font-size: 0.85rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn--cream-sm {
+        font-size: 12px;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .site-footer--light::before {
+        left: 10px;
+        right: 10px;
+    }
+}
