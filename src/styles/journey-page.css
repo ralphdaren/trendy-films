@@ -1,0 +1,201 @@
+/* ── journey-page.css ─────────────────────────────────────────────────────── */
+
+/* journey-page.css — depends on base.css and components.css */
+
+/* ── HERO ─────────────────────────────────────────────────────────────────── */
+.journey-hero {
+    background-color: var(--color-cream);
+    padding: 160px 80px 80px;           /* top clears fixed nav */
+}
+
+.journey-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-accent-gold);
+    margin: 0 0 20px 4px;
+}
+
+.journey-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 7vw, 90px);
+    font-weight: 400;
+    line-height: 1.08;
+    color: var(--color-dark-brown);
+    margin: 0;
+}
+
+.journey-hero__title em {
+    font-family: var(--font-script);
+    font-style: normal;
+    font-size: clamp(58px, 8vw, 100px);
+    color: var(--color-accent-brown);
+}
+
+/* ── PROCESS SECTION ──────────────────────────────────────────────────────── */
+.journey-process {
+    background-color: var(--color-cream);
+    padding: 20px 80px 100px;
+}
+
+.journey-process__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    max-width: 1300px;
+}
+
+/* ── ACCORDION ITEM ───────────────────────────────────────────────────────── */
+.journey-accordion-item {
+    border-bottom: 1px solid var(--color-divider);
+}
+
+.journey-accordion-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 26px 0;
+    text-align: left;
+}
+
+.journey-accordion-trigger:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.journey-accordion-title {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2.2vw, 28px);
+    font-weight: 400;
+    color: var(--color-mid-brown);
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    transition: color var(--transition-mid);
+}
+
+/* Arrow icon */
+.journey-accordion-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent-brown);
+    transition: transform var(--transition-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-accordion-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Open state */
+.journey-accordion-item.is-open .journey-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.journey-accordion-item.is-open .journey-accordion-title {
+    color: var(--color-dark-brown);
+}
+
+/* Collapsible panel */
+.journey-accordion-panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.42s ease;
+}
+
+.journey-accordion-item.is-open .journey-accordion-panel {
+    max-height: 600px;
+}
+
+.journey-accordion-body {
+    padding-bottom: 28px;
+}
+
+.journey-accordion-body p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: var(--color-mid-brown);
+    max-width: 540px;
+    margin: 0;
+}
+
+.journey-accordion-body p + p {
+    margin-top: 14px;
+}
+
+/* ── CLOSING QUOTE (matches sec4-quote-section pattern) ───────────────────── */
+.journey-closing {
+    width: 100%;
+    min-height: 45vh;
+    background-color: var(--color-peach);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+}
+
+.journey-closing__content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.journey-closing__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    line-height: 1.4;
+    color: var(--color-dark-brown);
+    margin: 0;
+}
+
+.journey-closing__text span {
+    display: block;
+    margin-top: 14px;
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: var(--color-mid-brown);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .journey-hero {
+        padding: 140px 32px 60px;
+    }
+
+    .journey-process {
+        padding: 16px 32px 60px;
+    }
+
+    .journey-process__grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .journey-hero {
+        padding: 120px 20px 48px;
+    }
+
+    .journey-process {
+        padding: 12px 20px 48px;
+    }
+
+    .journey-accordion-title {
+        font-size: 18px;
+    }
+}

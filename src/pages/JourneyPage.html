@@ -1,3 +1,4 @@
+<!-- JourneyPage.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,34 +8,229 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/styles/base.css" />
-    <link rel="stylesheet" href="src/styles/components.css" />
-    <link rel="stylesheet" href="src/styles/index.css" />
-    <link rel="icon" href="assets/images/tab-logo.png" type="image/png" />
-    <title>Journey| Trendy Films | Winnipeg Wedding Videographer</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/journey-page.css" />
+    <link rel="icon" href="../../assets/images/tab-logo.png" type="image/png" />
+    <title>Journey | Trendy Films | Winnipeg Wedding Videographer</title>
 </head>
 <body>
-  <main>
-    <section>
-      <div>
-        <header>
-          <nav>
-            <ul>
-              <li><a href="../../index.html" class="nav-link nav-link--dark">HOME</a></li>
-              <li><a href="StorytellersPage.html" class="nav-link nav-link--dark">STORYTELLERS</a></li>
-              <li><a href="StoriesPage.html" class="nav-link nav-link--dark">STORIES</a></li>
-              <li><a href="JourneyPage.html" class="nav-link nav-link--dark">JOURNEY</a></li>
-              <li><a href="ContactPage.html" class="nav-link nav-link--dark">CONTACT US & FAQ</a></li>
+
+    <!-- NAV -->
+    <header>
+        <nav class="site-nav site-nav--light" aria-label="Main site navigation">
+            <ul class="site-nav__list">
+                <li><a href="../../index.html"       class="nav-link nav-link--light">HOME</a></li>
+                <li><a href="StorytellersPage.html"  class="nav-link nav-link--light">STORYTELLERS</a></li>
+                <li><a href="StoriesPage.html"       class="nav-link nav-link--light">STORIES</a></li>
+                <li><a href="JourneyPage.html"       class="nav-link nav-link--light">JOURNEY</a></li>
+                <li><a href="ContactPage.html"       class="nav-link nav-link--light">CONTACT US &amp; FAQ</a></li>
             </ul>
-          </nav>
-        </header>
-      </div>
+        </nav>
+    </header>
 
-    </section>
-  </main>
+    <main>
 
-  <footer>
+        <!-- HERO -->
+        <section class="journey-hero">
+            <p class="journey-hero__eyebrow">Step by step</p>
+            <h1 class="journey-hero__title reveal-up">The Journey<br><em>to your Film</em></h1>
+        </section>
 
-  </footer>
+        <!-- PROCESS ACCORDION -->
+        <section class="journey-process">
+            <div class="journey-process__grid">
+
+                <!-- LEFT COL -->
+                <div class="journey-process__col">
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">1. The Unfolding</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>Once you reach out, I'll get back to you as quickly as possible so we can arrange a time to meet—either in person or via Zoom. This is a chance for us to connect, share your vision, and see if we're the perfect match for your special day. No sales pitch, just an authentic conversation about your special day.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">2. Curated Proposal</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>Following our conversation, I'll craft a custom proposal designed with only one purpose—to create the most memorable experience for you, shaped by the vision you've shared with me. After all, no two love stories are alike, and neither should the proposal be.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">3. Proposal Reach Out</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>This is a wonderful moment for us to walk through the proposal together, where you can ask any questions you may have. My goal is to ensure everything feels clear and that you're thrilled to have me by your side on this beautiful journey.</p>
+                                <p>When you're ready to move forward, I'll ask for a retainer and a signed contract to secure your date. I'll also be happy to create a payment plan that works best for you, with the only request being that the balance is cleared one month before your wedding day.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">4. Designing YOUR Story</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>When you choose to work with me, I'm more than just another vendor. I'm here to offer my expertise and support to help you plan a seamless and unforgettable day. Whether you need vendor recommendations, timeline advice, or just someone to bounce ideas with, I'm always available by text or phone call. You'll never have to navigate this process alone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /left col -->
+
+                <!-- RIGHT COL -->
+                <div class="journey-process__col">
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">5. Cherry On Top</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>If you choose our package that includes Pre-Wedding or Concept Films, we'll set aside a full day to create a Story film—cinematic, personal, and uniquely yours. This isn't your typical engagement session with posed smiles and perfect angles. Instead, I want to capture you and your partner simply being yourselves—doing something you love, in a place that feels like home. Whether shared as a teaser or played at your reception, this film becomes a sweet prelude to your wedding day—a poetic glimpse into the love that led you here.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">6. The Prelude</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>I do my best to attend your ceremony rehearsal, because being fully present and prepared for one of the most meaningful moments of your lives truly matters to me. It's all part of the care and attention I bring to your experience.</p>
+                                <p>While I'm there, I also take the opportunity to capture the quiet beauty in the details—your rings, your vows, the little things that carry so much heart. These intimate touches help complete the story of your day, woven together with love and intention.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">7. The Moment You Say 'I Do'</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>After months of dreaming and planning, the day you've been waiting for is finally here. Now it's your time to take it all in, be present with the ones you love, and let everything else fall into place. This day only happens once—and I'll be right by your side through it all. From the big, emotional moments to the quiet ones you might miss, I'll be there to gently preserve every detail, so you can relive the magic for years to come.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-accordion-item">
+                        <button class="journey-accordion-trigger" aria-expanded="false">
+                            <span class="journey-accordion-title">8. Fall in Love Again and Again</span>
+                            <span class="journey-accordion-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="journey-accordion-panel">
+                            <div class="journey-accordion-body">
+                                <p>Once your wedding day has passed and the confetti has settled, my work truly begins. I'll carefully craft a film that not only brings you back to every feeling, glance, and laugh—but becomes a timeless keepsake for generations to come.</p>
+                                <p>When your film is ready, you'll have something you can return to—again and again—to relive the timeless moments, feel the love, and fall for each other all over again. My turnaround time is typically 3 to 6 months, ensuring every detail is artfully and intentionally woven together.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /right col -->
+
+            </div>
+        </section>
+
+        <!-- CLOSING QUOTE (matches sec4 pattern from homepage) -->
+        <section class="journey-closing">
+            <div class="journey-closing__content">
+                <p class="journey-closing__text reveal-up">Every great love story deserves to be told—</p>
+                <p class="journey-closing__text">
+                    <span>beautifully, honestly, and with the wonder it deserves.</span>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (mirrors homepage footer) -->
+    <footer class="site-footer site-footer--light">
+        <div>
+            <div id="footer-section">
+                <div class="site-footer_top">
+                    <img src="../../assets/images/logo.png" class="site-footer_logo" alt="Story and Wonder Studios Logo" />
+                    <nav aria-label="Footer navigation">
+                        <ul class="site-footer_nav-list">
+                            <li><a href="../../index.html"      class="footer-link footer-link--light">Home</a></li>
+                            <li><a href="StorytellersPage.html" class="footer-link footer-link--light">Storytellers</a></li>
+                            <li><a href="StoriesPage.html"      class="footer-link footer-link--light">Stories</a></li>
+                            <li><a href="JourneyPage.html"      class="footer-link footer-link--light">Journey</a></li>
+                            <li><a href="ContactPage.html"      class="footer-link footer-link--light">Contact Us &amp; FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <div class="site-footer_socials site-footer_socials--light">
+                    <a href="https://www.instagram.com/storyandwonderstudios/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@StoryAndWonderStudios" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/storyandwonderstudios" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+                <p class="site-footer_contact">StoryandWonderStudios@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/journey-page.js"></script>
 </body>
 </html>
