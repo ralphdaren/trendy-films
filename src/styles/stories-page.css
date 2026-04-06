@@ -1,4 +1,4 @@
-/* ServicePage.css — Service page-only styles depends on: base.css, components.css */
+/* stories-page.css — Stories page-only styles depends on: base.css, components.css */
 
 /* Page shell */
 #servicepage-body {
@@ -40,7 +40,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("assets/images/services-background.jpg");
+    background-image: url("../../assets/images/services-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
