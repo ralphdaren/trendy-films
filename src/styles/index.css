@@ -1,9 +1,6 @@
-/* ============================================
-   index.css — Homepage-only styles
-   Depends on: base.css, components.css
-   ============================================ */
+/* index.css — Homepage-only styles depends on: base.css, components.css */
 
-/* ─── Page shell ────────────────────────────── */
+/* Page shell */
 #homepage-body {
     margin: 0;
     padding: 0;
@@ -11,7 +8,7 @@
     overflow-x: hidden;
 }
 
-/* ─── SECTION 1: Hero ───────────────────────── */
+/* SECTION 1: Hero */
 #homepage-background-container {
     position: fixed;
     top: 0;
@@ -70,7 +67,7 @@
     margin-bottom: 50px;
 }
 
-/* ─── SECTION 2: Story intro ────────────────── */
+/* SECTION 2: Story intro */
 #homepage-next-section {
     position: relative;
     background-color: var(--color-warm-white);
@@ -79,7 +76,7 @@
     z-index: 1;
     background-image:
         linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.4)),
-        url("files/nextsc-bg.jpg");
+        url("assets/images/nextsc-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -136,7 +133,7 @@
     color: var(--color-dark-brown);
 }
 
-/* ─── SECTION 3: Full-bleed video ───────────── */
+/* SECTION 3: Full-bleed video */
 #sec2-video-container {
     position: relative;
     z-index: 2;
@@ -155,7 +152,7 @@
     display: block;
 }
 
-/* ─── SECTION 4: Dark text ──────────────────── */
+/* SECTION 4: Dark text */
 #sec2-text-section {
     background-color: var(--color-dark-brown);
     display: flex;
@@ -187,7 +184,7 @@
     margin: 0;
 }
 
-/* ─── SECTION 5: Carousel ───────────────────── */
+/* SECTION 5: Carousel */
 #sec3-carousel-section {
     position: relative;
     width: 100%;
@@ -213,9 +210,9 @@
     animation: sec3Fade 18s infinite;
 }
 
-.sec3-slide-1 { background-image: url("files/sample-one.png"); }
-.sec3-slide-2 { background-image: url("files/sample-five.png"); animation-delay: 6s; }
-.sec3-slide-3 { background-image: url("files/sample-seven.png"); animation-delay: 12s; }
+.sec3-slide-1 { background-image: url("assets/images/sample-one.png"); }
+.sec3-slide-2 { background-image: url("assets/images/sample-five.png"); animation-delay: 6s; }
+.sec3-slide-3 { background-image: url("assets/images/sample-seven.png"); animation-delay: 12s; }
 
 @keyframes sec3Fade {
     0%   { opacity: 0; transform: scale(1.07); }
@@ -272,7 +269,7 @@
     max-width: 900px;
 }
 
-/* ─── SECTION 6: Closing quote ──────────────── */
+/* SECTION 6: Closing quote */
 #sec4-quote-section {
     width: 100%;
     min-height: 55vh;
@@ -304,7 +301,7 @@
     letter-spacing: 0.3px;
 }
 
-/* ─── Media queries ─────────────────────────── */
+/* Media queries */
 @media (max-width: 700px) {
     #homepage-logo-bg-video {
         width: 90%;

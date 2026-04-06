@@ -1,15 +1,12 @@
-/* ============================================
-   ServicePage.css — Service page-only styles
-   Depends on: base.css, components.css
-   ============================================ */
+/* ServicePage.css — Service page-only styles depends on: base.css, components.css */
 
-/* ─── Page shell ────────────────────────────── */
+/* Page shell */
 #servicepage-body {
     margin: 0;
     padding: 0;
 }
 
-/* ─── Page heading ──────────────────────────── */
+/* Page heading */
 #servicepage-h1 {
     font-weight: 500;
     text-shadow:
@@ -17,7 +14,7 @@
        -1px -1px 2px rgba(255,255,255,0.7);
 }
 
-/* ─── Service content wrapper ───────────────── */
+/* Service content wrapper */
 #service-main-container {
     position: relative;
     display: flex;
@@ -43,7 +40,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("files/services-background.jpg");
+    background-image: url("assets/images/services-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +74,7 @@
     text-align: center;
 }
 
-/* ─── Sample gallery section ────────────────── */
+/* Sample gallery section */
 #service-next-section {
     position: relative;
     background-color: var(--color-cream);
@@ -131,7 +128,7 @@
     transform: scale(1.1);
 }
 
-/* ─── Media queries ─────────────────────────── */
+/* Media queries */
 @media (max-width: 700px) {
     #service-main-container {
         gap: 20px;

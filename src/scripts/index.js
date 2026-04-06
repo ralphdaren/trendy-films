@@ -1,4 +1,4 @@
-/* Main JavaScript File */
+/* index.js */
 document.addEventListener("DOMContentLoaded", () => {
   const revealElements = document.querySelectorAll(".reveal-up");
 

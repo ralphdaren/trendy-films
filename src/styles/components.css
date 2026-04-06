@@ -1,9 +1,6 @@
-/* ============================================
-   components.css — Reusable UI components
-   Shared between index.html and ServicePage.html
-   ============================================ */
+/* components.css - Reusable UI components shared between index.html and ServicePage.html */
 
-/* ─── NAV (shared base) ─────────────────────── */
+/* NAV (shared base) */
 .site-nav {
     padding: 2em 0;
     width: 100%;
@@ -20,15 +17,15 @@
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-/* Dark variant — homepage */
+/* Dark variant - homepage */
 .site-nav--dark {
     background-color: var(--color-dark-brown);
 }
 
-/* Light variant — inner pages */
+/* Light variant - inner pages */
 .site-nav--light {
     background-color: var(--color-cream);
-    position: static; /* inner page navs aren't sticky */
+    position: static;
 }
 
 .site-nav__list {
@@ -43,7 +40,7 @@
     margin: 0 5em;
 }
 
-/* ─── NAV LINK (shared base) ────────────────── */
+/* NAV LINK (shared base) */
 .nav-link {
     position: relative;
     display: inline-block;
@@ -89,7 +86,7 @@
     background-color: var(--color-accent-gold);
 }
 
-/* ─── FOOTER (shared base) ──────────────────── */
+/* FOOTER (shared base) */
 .site-footer {
     padding: 0 20px 40px 20px;
     text-align: center;
@@ -114,7 +111,7 @@
     background-color: var(--color-divider);
 }
 
-.site-footer__top {
+.site-footer_top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,12 +119,12 @@
     flex-wrap: wrap;
 }
 
-.site-footer__logo {
+.site-footer_logo {
     width: 500px;
     max-width: 100%;
 }
 
-.site-footer__nav-list {
+.site-footer_nav-list {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -183,41 +180,41 @@
     color: var(--color-accent-brown);
 }
 
-.site-footer__socials {
+.site-footer_socials {
     margin: 20px 0;
 }
 
-.site-footer__socials a {
+.site-footer_socials a {
     margin: 0 10px;
     transition: color var(--transition-mid);
     text-decoration: none;
 }
 
-.site-footer__socials--dark a {
+.site-footer_socials--dark a {
     color: var(--color-white);
 }
-.site-footer__socials--dark a:hover {
+.site-footer_socials--dark a:hover {
     color: #d1ae8d;
 }
 
-.site-footer__socials--light a {
+.site-footer_socials--light a {
     color: var(--color-mid-brown);
 }
-.site-footer__socials--light a:hover {
+.site-footer_socials--light a:hover {
     color: var(--color-accent-brown);
 }
 
-.site-footer__contact {
+.site-footer_contact {
     font-family: var(--font-body);
     font-size: 13px;
     letter-spacing: 1px;
     margin-top: 10px;
 }
 
-.site-footer--dark  .site-footer__contact { color: var(--color-white); }
-.site-footer--light .site-footer__contact { color: var(--color-mid-brown); font-size: 12px; }
+.site-footer--dark  .site-footer_contact { color: var(--color-white); }
+.site-footer--light .site-footer_contact { color: var(--color-mid-brown); font-size: 12px; }
 
-/* ─── BUTTON (shared base) ──────────────────── */
+/* BUTTON (shared base) */
 .btn {
     position: relative;
     display: inline-block;
@@ -303,7 +300,7 @@
 .btn--olive:hover    { color: var(--color-cream); }
 .btn--olive:active   { color: var(--color-mid-brown); }
 
-/* ─── ACCORDION ─────────────────────────────── */
+/* ACCORDION */
 .accordion-item {
     margin-bottom: 20px;
     width: 100%;
@@ -366,7 +363,7 @@
     padding: 16px;
 }
 
-/* ─── SHARED MEDIA QUERIES ──────────────────── */
+/* SHARED MEDIA QUERIES */
 @media (max-width: 700px) {
     html, body {
         overflow-x: hidden;
@@ -384,16 +381,16 @@
         justify-content: center;
     }
 
-    .site-footer__top {
+    .site-footer_top {
         flex-direction: column;
         gap: 20px;
     }
 
-    .site-footer__logo {
+    .site-footer_logo {
         width: 80%;
     }
 
-    .site-footer__nav-list {
+    .site-footer_nav-list {
         flex-direction: column;
         gap: 10px;
         align-items: center;
