@@ -17,7 +17,7 @@
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-/* Dark variant - homepage */
+/* Dark variant */
 .site-nav--dark {
     background-color: var(--color-dark-brown);
 }
@@ -28,7 +28,7 @@
     position: static;
 }
 
-.site-nav__list {
+.site-nav_list {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -36,7 +36,7 @@
     padding: 0;
 }
 
-.site-nav__list li {
+.site-nav_list li {
     margin: 0 5em;
 }
 
@@ -79,7 +79,7 @@
 /* Light nav link (brown text + gold underline) */
 .nav-link--light {
     color: var(--color-mid-brown);
-    font-weight: 700;
+    font-weight: 400;
 }
 .nav-link--light::after {
     height: 2px;
@@ -369,13 +369,13 @@
         overflow-x: hidden;
     }
 
-    .site-nav__list {
+    .site-nav_list {
         flex-direction: column;
         gap: 1em;
         align-items: center;
     }
 
-    .site-nav__list li {
+    .site-nav_list li {
         margin: 0;
         display: flex;
         justify-content: center;

@@ -12,45 +12,53 @@
     <link rel="stylesheet" href="../styles/components.css" />
     <link rel="stylesheet" href="../styles/journey-page.css" />
     <link rel="icon" href="../../assets/images/tab-logo.png" type="image/png" />
-    <title>Journey | Trendy Films | Winnipeg Wedding Videographer</title>
+    <title>Journey | Story and Wonder Studios | Winnipeg Wedding Videographer</title>
 </head>
 <body>
 
     <!-- NAV -->
     <header>
-        <nav class="site-nav site-nav--light" aria-label="Main site navigation">
-            <ul class="site-nav__list">
-                <li><a href="../../index.html"       class="nav-link nav-link--light">HOME</a></li>
-                <li><a href="StorytellersPage.html"  class="nav-link nav-link--light">STORYTELLERS</a></li>
-                <li><a href="StoriesPage.html"       class="nav-link nav-link--light">STORIES</a></li>
-                <li><a href="JourneyPage.html"       class="nav-link nav-link--light">JOURNEY</a></li>
-                <li><a href="ContactPage.html"       class="nav-link nav-link--light">CONTACT US &amp; FAQ</a></li>
+        <nav id="homepage-main-nav" class="site-nav site-nav--light" aria-label="Main site navigation">
+            <ul class="site-nav_list">
+                <li><a href="../../index.html"      class="nav-link nav-link--light">HOME</a></li>
+                <li><a href="StorytellersPage.html" class="nav-link nav-link--light">STORYTELLERS</a></li>
+                <li><a href="StoriesPage.html"      class="nav-link nav-link--light">STORIES</a></li>
+                <li><a href="JourneyPage.html"      class="nav-link nav-link--light">JOURNEY</a></li>
+                <li><a href="ContactPage.html"      class="nav-link nav-link--light">CONTACT US &amp; FAQ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <!-- HERO -->
+        <!-- ── HERO: full-bleed video ── -->
         <section class="journey-hero">
-            <p class="journey-hero__eyebrow">Step by step</p>
-            <h1 class="journey-hero__title reveal-up">The Journey<br><em>to your Film</em></h1>
+            <div class="journey-hero__video-wrap" aria-hidden="true">
+                <video class="journey-hero__video" autoplay loop muted playsinline>
+                    <source src="https://res.cloudinary.com/dr9nm40gf/video/upload/q_auto,f_auto/v1775519626/journey-header_xkoz7u.mp4" type="video/mp4">
+                </video>
+                <div class="journey-hero__overlay"></div>
+            </div>
+
+            <div class="journey-hero__content">
+                <h1 class="journey-hero__title reveal-up">
+                    The Journey<br><em>to your Film</em>
+                </h1>
+            </div>
         </section>
 
-        <!-- PROCESS ACCORDION -->
+        <!-- ── PROCESS ACCORDION ── -->
         <section class="journey-process">
             <div class="journey-process__grid">
 
-                <!-- LEFT COL -->
+                <!-- LEFT COLUMN: steps 1–4 -->
                 <div class="journey-process__col">
 
                     <div class="journey-accordion-item">
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">1. The Unfolding</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -64,9 +72,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">2. Curated Proposal</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -80,9 +86,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">3. Proposal Reach Out</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -97,9 +101,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">4. Designing YOUR Story</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -111,16 +113,14 @@
 
                 </div><!-- /left col -->
 
-                <!-- RIGHT COL -->
+                <!-- RIGHT COLUMN: steps 5–8 -->
                 <div class="journey-process__col">
 
                     <div class="journey-accordion-item">
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">5. Cherry On Top</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -134,9 +134,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">6. The Prelude</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -151,9 +149,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">7. The Moment You Say 'I Do'</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -167,9 +163,7 @@
                         <button class="journey-accordion-trigger" aria-expanded="false">
                             <span class="journey-accordion-title">8. Fall in Love Again and Again</span>
                             <span class="journey-accordion-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="6 9 12 15 18 9"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg>
                             </span>
                         </button>
                         <div class="journey-accordion-panel">
@@ -182,10 +176,10 @@
 
                 </div><!-- /right col -->
 
-            </div>
+            </div><!-- /grid -->
         </section>
 
-        <!-- CLOSING QUOTE (matches sec4 pattern from homepage) -->
+        <!-- ── CLOSING QUOTE ── -->
         <section class="journey-closing">
             <div class="journey-closing__content">
                 <p class="journey-closing__text reveal-up">Every great love story deserves to be told—</p>
@@ -197,7 +191,7 @@
 
     </main>
 
-    <!-- FOOTER (mirrors homepage footer) -->
+    <!-- FOOTER -->
     <footer class="site-footer site-footer--light">
         <div>
             <div id="footer-section">
