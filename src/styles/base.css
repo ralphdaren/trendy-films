@@ -3,8 +3,8 @@
 /* Custom Fonts */
 @font-face {
     font-family: 'Brittany Signature';
-    src: url('assets/BrittanySignatureRegular.woff2') format('woff2'),
-         url('assets/BrittanySignatureRegular.woff') format('woff');
+    src: url('../../assets/fonts/BrittanySignatureRegular.woff2') format('woff2'),
+         url('../../assets/fonts/BrittanySignatureRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'APOLLO';
-    src: url('assets/APOLLO-Regular.woff2') format('woff2'),
-         url('assets/APOLLO-Regular.woff') format('woff');
+    src: url('../../assets/fonts/APOLLO-Regular.woff2') format('woff2'),
+         url('../../assets/fonts/APOLLO-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
