@@ -1,13 +1,24 @@
 /* JourneyPage.js */
 
 // ── Accordion ──────────────────────────────────────────────────────────────
+const accordionItems = document.querySelectorAll('.journey-accordion-item');
+
 document.querySelectorAll('.journey-accordion-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
         const item = trigger.closest('.journey-accordion-item');
         const isOpen = item.classList.contains('is-open');
 
-        item.classList.toggle('is-open', !isOpen);
-        trigger.setAttribute('aria-expanded', String(!isOpen));
+        // Close all items
+        accordionItems.forEach(i => {
+            i.classList.remove('is-open');
+            i.querySelector('.journey-accordion-trigger').setAttribute('aria-expanded', 'false');
+        });
+
+        // Open the clicked one only if it was closed
+        if (!isOpen) {
+            item.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+        }
     });
 });
 
