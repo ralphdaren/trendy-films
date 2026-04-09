@@ -8,13 +8,13 @@
     top: 0;
     left: 0;
     z-index: 999;
+    transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
 .site-nav.nav-hidden {
+    transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-20px);
-    transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 /* Dark variant */
@@ -25,7 +25,6 @@
 /* Light variant - inner pages */
 .site-nav--light {
     background-color: var(--color-cream);
-    position: static;
 }
 
 .site-nav_list {

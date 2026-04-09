@@ -3,7 +3,7 @@
 /* Page shell */
 #servicepage-body {
     margin: 0;
-    padding: 0;
+    padding-top: var(--nav-height);
 }
 
 /* Page heading */

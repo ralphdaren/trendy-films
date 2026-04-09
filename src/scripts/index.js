@@ -28,17 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const nav = document.getElementById("homepage-main-nav");
-  const heroSection = document.getElementById("home-section");
-
-  if (nav && heroSection) {
-    const navObserver = new IntersectionObserver(
-      ([entry]) => {
-        nav.classList.toggle("nav-hidden", !entry.isIntersecting);
-      },
-      { threshold: 0.2 }
-    );
-
-    navObserver.observe(heroSection);
-  }
 });
