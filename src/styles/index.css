@@ -34,8 +34,6 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 140px;
-    z-index: 1;
-    transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 #homepage-logo-container {
