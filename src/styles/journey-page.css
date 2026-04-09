@@ -78,6 +78,18 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ── PROCESS HEADING ──────────────────────────────────────────────────────── */
+.journey-process__heading {
+    max-width: 1300px;
+    margin: 0 auto 56px;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    color: var(--color-dark-brown);
+    letter-spacing: 0.02em;
 }
 
 /* ── ACCORDION ITEM ───────────────────────────────────────────────────────── */
@@ -106,7 +118,7 @@
 
 .journey-accordion-title {
     font-family: var(--font-display);
-    font-size: clamp(20px, 2.2vw, 28px);
+    font-size: clamp(24px, 2.6vw, 34px);
     font-weight: 400;
     color: var(--color-mid-brown);
     letter-spacing: 0.03em;
@@ -157,7 +169,7 @@
 
 .journey-accordion-body p {
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.85;
     color: var(--color-mid-brown);
