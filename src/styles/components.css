@@ -296,9 +296,9 @@
     background-color: var(--color-olive);
     margin-top: 16px;
 }
-.btn--olive::before  { background-color: var(--color-olive-light); }
+.btn--olive::before  { background-color: var(--color-dark-brown); }
 .btn--olive:hover    { color: var(--color-cream); }
-.btn--olive:active   { color: var(--color-mid-brown); }
+.btn--olive:active   { color: var(--color-cream); }
 
 /* ACCORDION */
 .accordion-item {
