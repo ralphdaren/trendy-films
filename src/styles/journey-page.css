@@ -94,7 +94,7 @@
 
 /* ── ACCORDION ITEM ───────────────────────────────────────────────────────── */
 .journey-accordion-item {
-    border-bottom: 1px solid var(--color-divider);
+    border-bottom: 1px solid var(--color-light-grey);
 }
 
 .journey-accordion-trigger {
@@ -129,9 +129,9 @@
 /* Arrow icon */
 .journey-accordion-icon {
     flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    color: var(--color-accent-brown);
+    width: 28px;
+    height: 28px;
+    color: var(--color-mid-brown);
     transition: transform var(--transition-mid);
     display: flex;
     align-items: center;
@@ -139,8 +139,8 @@
 }
 
 .journey-accordion-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
 }
 
 /* Open state */

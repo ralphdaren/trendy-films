@@ -28,6 +28,7 @@
     --color-olive-light:  #9b8878;   /* greige         */
     --color-olive:        #9b8878;   /* greige         */
     --color-white:        #ffffff;
+    --color-light-grey:   #c8c4bf;
     --color-error:        red;
 
     /* Aliases — old names kept so existing references don't break */
