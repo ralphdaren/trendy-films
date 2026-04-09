@@ -194,7 +194,7 @@
     color: var(--color-white);
 }
 .site-footer_socials--dark a:hover {
-    color: #d1ae8d;
+    color: var(--color-warm-tan);
 }
 
 .site-footer_socials--light a {
@@ -250,7 +250,7 @@
     padding: 17px 50px;
     font-size: 14px;
     color: var(--color-mid-brown);
-    background-color: #f1efef;
+    background-color: var(--color-peach);
 }
 .btn--cream::before      { background-color: var(--color-olive); }
 .btn--cream:hover        { color: var(--color-cream); }
@@ -260,7 +260,7 @@
     padding: 17px 30px;
     font-size: 14px;
     color: var(--color-mid-brown);
-    background-color: #f1efef;
+    background-color: var(--color-peach);
 }
 .btn--cream-sm::before   { background-color: var(--color-teal); }
 .btn--cream-sm:hover     { color: var(--color-cream); }
@@ -270,7 +270,7 @@
     padding: 10px 25px;
     font-size: 12px;
     color: var(--color-mid-brown);
-    background-color: #f1efef;
+    background-color: var(--color-peach);
     margin-top: 40px;
 }
 .btn--form::before       { background-color: var(--color-teal); }
@@ -281,9 +281,9 @@
     padding: 10px 25px;
     font-size: 12px;
     color: var(--color-mid-brown);
-    background-color: #f1efef;
+    background-color: var(--color-peach);
 }
-.btn--cancel::before     { background-color: #fb8d8d; }
+.btn--cancel::before     { background-color: var(--color-olive-light); }
 
 /* Olive CTA (sec3) */
 .btn--olive {
@@ -323,7 +323,7 @@
 }
 
 .accordion-header:hover {
-    background-color: #2c2922;
+    background-color: var(--color-dark-brown);
 }
 
 .accordion-header::after {
@@ -338,7 +338,7 @@
 
 .accordion-item.open .accordion-header {
     font-weight: 700;
-    background-color: #2e2a22;
+    background-color: var(--color-dark-brown);
 }
 
 .accordion-content {

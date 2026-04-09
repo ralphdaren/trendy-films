@@ -21,21 +21,24 @@
 
 /* Design Tokens */
 :root {
-    /* Colors */
-    --color-dark-brown:   #311e0f;
-    --color-mid-brown:    #39352c;
-    --color-light-brown:  #6B5335;
-    --color-accent-brown: #957252;
-    --color-accent-gold:  #ad8864;
-    --color-olive:        #525032;
-    --color-olive-light:  #838562;
-    --color-teal:         #86b4b1;
-    --color-cream:        #efedea;
-    --color-warm-white:   #f9f7f4;
-    --color-peach:        #f4e4c9;
+    /* Colors — Champagne & Charcoal palette */
+    --color-dark-brown:   #2a2520;   /* warm charcoal  */
+    --color-warm-tan:     #c9a96e;   /* champagne gold */
+    --color-peach:        #f4ede0;   /* warm white     */
+    --color-olive-light:  #9b8878;   /* greige         */
+    --color-olive:        #9b8878;   /* greige         */
     --color-white:        #ffffff;
     --color-error:        red;
-    --color-divider:      #cfcdcd;
+
+    /* Aliases — old names kept so existing references don't break */
+    --color-mid-brown:    #2a2520;
+    --color-light-brown:  #e8cdb8;
+    --color-accent-brown: #c9a96e;
+    --color-accent-gold:  #c9a96e;
+    --color-teal:         #9b8878;
+    --color-cream:        #f4ede0;
+    --color-warm-white:   #f4ede0;
+    --color-divider:      #e8cdb8;
 
     /* Typography */
     --font-display:    'APOLLO', serif;
